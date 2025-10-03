@@ -231,7 +231,7 @@ for (
 |i = 2|i < 4| i++| `2 itération`, `i final = 3`, `2 3`|
 |i = 0|i <= 3| i++ |`4 itération`, `i final = 3`, `0 1 2 3`|
 |i = 0|i <= 4| i+=2 |`3 itération`, `i final = 3`, `0 2 4`|
-|i = 10|i > 3| i-- |`6 itération`, `i final = 3`, `0 1 2 3`|
+|i = 10|i > 3| i-- |`6 itération`, `i final = 3`, `10 9 8 7 6 5 4`|
 
 ### `while loop`
 
@@ -457,4 +457,3 @@ void ma_fonction() {}; // ca sert a rien mais c'est pas grave pour autant
 ### `{}`
 
 Les accolades sont utilisées lorsqu'une action a un *corps* (*body* en anglais), c'est à dire plusieurs action relié a un terme (tel qu'une boucle, une fonction ou une condition). Il est inutile de mettre un point-virgule derrière la fermeture du *body* tel ceci : `...{...}; // <- inutile`.
-
