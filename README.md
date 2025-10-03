@@ -81,6 +81,14 @@ liste[3]; // erreur la liste est trop courte
 - `%f` : `float` pour afficher un nombre à virgule (flottante).
 - `%c` : `character` pour afficher un caractère.
 
+## Caractères spéciaux
+
+Il existe plusieurs caractère spéciaux, qui permette de manipuler l'apparence du terminal.
+
+- `'\n'` : `newline`, insert a retour a la ligne.
+- `'\t'` : `tab`, fait une tabulation (espace de 4-8 caractère).
+- `'\\'` : écrire `\` dans le terminal.
+
 ## Interaction avec l'utilisateur
 
 Pour interagir avec l'utilisateur, C dispose de `libraries` (ou `bibliothèques` en français) permettant d'afficher du texte dans la console, ou de permettre à l'utilisateur à entrer du texte.  
@@ -91,7 +99,10 @@ Les fonctions les plus connues sont `printf` et `scanf`.
 ### `printf`
 
 Utilisation :  
-printf( \[string/suite de caractères\] ); printf( \[suite de caractère possédant au moins 1 element de formatage\], \[ variables (séparer par des virgules s'il y'en a plusieurs )\]);\`
+```
+printf( [string/suite de caractères] );
+printf( [suite de caractère possédant au moins 1 element de formatage], [ variables (séparer par des virgules s'il y'en a plusieurs) ]);
+```
 
 ```c
 printf("Bonjour") // écrit Bonjour dans la console
@@ -107,6 +118,8 @@ int nombre = 18;
 printf(nombre); // NON
 
 printf("%d", nombre); // ouiii
+printf("%d", 23); // ouiiii
+printf("Année : %d, mois : %d, jour : %d", 2020, 10, 13);
 ```
 
 ### `scanf`
