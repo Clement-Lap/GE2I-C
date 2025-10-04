@@ -178,6 +178,35 @@ i *= 3; // i = i * 3
 i /= 3; // i = i / 3
 ```
 
+### Le `reminder`
+
+Le `reminder` (signifiant *reste*), signifie le reste lors d'une division entre deux chiffre entier. Elle est caractérisée par le symbole `%`.
+`x % y = res` ici, le résultat `res` est OBLIGATOIREMENT plus petit que `y`, et égal ou plus grand que `x`.
+
+*A noté que cela s'applique seulement sur les chiffre entiers, positifs ou négatifs*
+
+**Cela est très utile lors d'une opération pour savoir si un chiffre est pair ou impaire.**
+
+```c
+7 % 3 // 1
+8 % 3 // 2
+9 % 3 // 0
+
+// pour savoir si un nombre est pair ou impaire
+
+x % 2 = 0 // x est pair
+x % 2 = 1 // x est impaire
+
+if (x % 2) {}
+/*
+ATTENTION, ici :
+si x n'est pas pair
+
+Pourquoi ?
+car si x est pair, x % 2 = 0, est donc égal a Faux.
+La condition est considéré comme fausse
+```
+
 Pour les calcules plus complexe tel que la racine carré, les fonctions cosinus, et exposants, on utilisera la *library* `math.h`. Il n'est pas nécessaire de le savoir pour le DS (sauf si le prof est pas gentil).
 
 ## Les opérations logiques
