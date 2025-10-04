@@ -205,6 +205,7 @@ si x n'est pas pair
 Pourquoi ?
 car si x est pair, x % 2 = 0, est donc égal a Faux.
 La condition est considéré comme fausse
+*/
 ```
 
 Pour les calcules plus complexe tel que la racine carré, les fonctions cosinus, et exposants, on utilisera la *library* `math.h`. Il n'est pas nécessaire de le savoir pour le DS (sauf si le prof est pas gentil).
